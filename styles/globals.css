@@ -1,8 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Courier+Prime:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main-container {
+    @apply container mx-auto px-4 md:px-8;
+  }
+  .blog-container {
+    @apply max-w-lg mx-auto px-4 md:px-8;
+  }
+  .normal-text {
+    @apply text-base text-dark mb-4 md:text-lg lg:text-xl dark:text-light;
+  }
+  .featured-tag {
+    @apply bg-primary text-light font-bold rounded px-2 dark:bg-secondary dark:text-dark;
+  }
+  .btn-link {
+    @apply inline-block text-dark no-underline
+  }
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Courier Prime', monospace, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -13,4 +37,32 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abril Fatface';
+}
+.hyper-title {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.hover-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.hover-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: theme('colors.primary');
+  transition: width .3s;
+}
+html.dark .hover-link::after {
+  background: theme('colors.secondary');
+}
+
+.hover-link:hover::after {
+  width: 100%;
 }
