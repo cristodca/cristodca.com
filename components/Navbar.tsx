@@ -17,7 +17,9 @@ const Navbar: NextComponentType = () => {
       <div className="main-container border-b border-b-dark py-4 dark:border-b-light">
         <div className="w-full flex justify-between items-center">
           <div className="flex items-center gap-4">
-            @cristodca
+            <span className="hidden md:block">
+              @cristodca
+            </span>
             <a
               href="https://mx.linkedin.com/in/cristodca"
               target="_blank"

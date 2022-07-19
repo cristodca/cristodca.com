@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import AboutMe from '../components/AboutMe'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 
@@ -17,22 +18,26 @@ const Home: NextPage = () => {
 
       <Navbar />
 
-      <div className="main-container py-8 min-h-screen md:flex flex-col justify-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
-          <div className='flex flex-col justify-center items-start'>
-            <h1 className='hyper-title text-dark bg-secondary rounded px-3 py-2 text-7xl mb-4'>Cristopher D. Chavez</h1>
-            <h2 className='text-secondary bg-dark p-3 rounded inline-block text-5xl'>Frontend Developer</h2>
+      <div className="main-container py-8 min-h-screen md:flex md:flex-col md:justify-center -mt-20">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full"> */}
+          <div className='flex min-h-screen flex-col justify-center items-start'>
+            <h1 className='mb-4'>
+              <span className='hyper-title text-dark bg-secondary px-3 py-2 text-5xl sm:text-6xl md:text-7xl box-decoration-clone leading-normal sm:leading-relaxed'>
+                Cristopher D.<br className='block md:hidden' />
+                Chavez
+              </span>
+            </h1>
+            <h2>
+              <span className='text-secondary bg-dark p-3 rounded inline-block text-4xl sm:text-5xl md:text-6xl box-decoration-clone leading-normal'>
+                Frontend <br className='block md:hidden' /> 
+                Developer
+              </span>
+            </h2>
           </div>
-          <div>
-            <p className="normal-text">
-              🧑🏻‍💻 Soy una persona de <span className="featured-tag">22 años</span> y vivo en Guadalajara, Jalisco.
-            </p>
-            <p className="normal-text">
-              Conocí la programación hace 7 años y desde entonces no he parado de sentir curiosidad. Me encantan las <span className="featured-tag">tecnologías web</span>, sobre todo las enfocadas en <span className="featured-tag">Javascript</span>. 🥰
-            </p>
-          </div>
-        </div>
+        {/* </div> */}
       </div>
+
+      <AboutMe />
 
       <Footer />
     </div>
