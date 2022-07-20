@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import AboutMe from '../components/AboutMe'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
@@ -18,23 +19,43 @@ const Home: NextPage = () => {
 
       <Navbar />
 
-      <div className="main-container py-8 min-h-screen md:flex md:flex-col md:justify-center -mt-20">
-        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full"> */}
-          <div className='flex min-h-screen flex-col justify-center items-start'>
+      <div className="main-container py-8 min-h-screen md:flex md:flex-col md:justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
+          <div className='flex flex-col justify-center items-start'>
             <h1 className='mb-4'>
-              <span className='hyper-title text-dark bg-secondary px-3 py-2 text-5xl sm:text-6xl md:text-7xl box-decoration-clone leading-normal sm:leading-relaxed'>
+              <span className='hyper-title text-dark bg-secondary px-3 py-2 text-5xl sm:text-6xl md:text-7xl box-decoration-clone leading-normal sm:leading-tight md:leading-tight'>
                 Cristopher D.<br className='block md:hidden' />
                 Chavez
               </span>
             </h1>
             <h2>
-              <span className='text-secondary bg-dark p-3 rounded inline-block text-4xl sm:text-5xl md:text-6xl box-decoration-clone leading-normal'>
+              <span className='text-secondary bg-dark p-3 inline-block text-4xl sm:text-5xl md:text-6xl box-decoration-clone leading-none'>
                 Frontend <br className='block md:hidden' /> 
                 Developer
               </span>
             </h2>
           </div>
-        {/* </div> */}
+          <div className="flex items-center justify-center">
+            <div className='dark:hidden block'>
+              <Image 
+                src='/img/me-draw.png'
+                
+                alt='Dibujo de mi programando en una laptop'
+                width={480}
+                height={480}
+              />
+            </div>
+            <div className='dark:block hidden'>
+              <Image 
+                src='/img/me-draw-dark.png'
+
+                alt='Dibujo de mi programando en una laptop'
+                width={480}
+                height={480}
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       <AboutMe />

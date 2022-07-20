@@ -9,7 +9,7 @@
     @apply container mx-auto px-4 md:px-8;
   }
   .blog-container {
-    @apply max-w-lg mx-auto px-4 md:px-8;
+    @apply max-w-3xl mx-auto px-4 md:px-8;
   }
   .normal-text {
     @apply text-base text-dark mb-4 md:text-lg lg:text-xl dark:text-light;

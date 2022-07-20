@@ -5,8 +5,7 @@ import Image from "next/image";
 const AboutMe: NextComponentType = () => {
   return (
     <div>
-      <div className="main-container py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="blog-container py-8">
           <div>
             <p className="normal-text">
               🧑🏻‍💻 Soy una persona de{" "}
@@ -35,18 +34,6 @@ const AboutMe: NextComponentType = () => {
               </span>
             </p>
           </div>
-          <div>
-            <Image
-              src="/img/me.jpg"
-              className="rounded-2xl"
-              alt="Cristopher Chavez de bebé con un pastel por su cumpleaños"
-              width={1920}
-              height={1080}
-              layout="responsive"
-              objectFit="contain"
-            />
-          </div>
-        </div>
       </div>
     </div>
   );
