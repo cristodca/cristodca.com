@@ -23,13 +23,13 @@ const Home: NextPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
           <div className='flex flex-col justify-center items-start'>
             <h1 className='mb-4'>
-              <span className='hyper-title text-dark bg-secondary px-3 py-2 text-5xl sm:text-6xl md:text-7xl box-decoration-clone leading-normal sm:leading-tight md:leading-tight'>
+              <span className='hyper-title text-dark bg-secondary px-3 py-2 text-5xl sm:text-6xl md:text-6xl box-decoration-clone leading-normal sm:leading-tight md:leading-tight font-bold'>
                 Cristopher D.<br className='block md:hidden' />
                 Chavez
               </span>
             </h1>
             <h2>
-              <span className='text-secondary bg-dark p-3 inline-block text-4xl sm:text-5xl md:text-6xl box-decoration-clone leading-none'>
+              <span className='text-secondary bg-dark p-3 inline-block text-4xl sm:text-5xl md:text-6xl box-decoration-clone leading-none font-medium'>
                 Frontend <br className='block md:hidden' /> 
                 Developer
               </span>
