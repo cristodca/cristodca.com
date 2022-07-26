@@ -6,17 +6,22 @@
 
 @layer components {
   .main-container {
-    @apply container mx-auto px-4 md:px-8;
+    @apply container mx-auto px-4 md:px-8 py-16;
   }
   .blog-container {
     @apply max-w-3xl mx-auto px-4 md:px-8;
   }
+
   .normal-text {
     @apply text-base text-dark mb-4 md:text-lg lg:text-xl dark:text-light;
+  }
+  .subtitle {
+    @apply normal-text font-semibold text-3xl mb-8;
   }
   .featured-tag {
     @apply bg-primary text-light font-bold rounded px-2 dark:bg-secondary dark:text-dark;
   }
+
   .btn-link {
     @apply inline-block text-dark no-underline
   }

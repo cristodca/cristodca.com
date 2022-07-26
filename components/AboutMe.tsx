@@ -1,15 +1,14 @@
 import React from "react";
 import { NextComponentType } from "next/types";
 import Image from "next/image";
+import AnimatedSubTitle from "./AnimatedSubTitle";
 
 const AboutMe: NextComponentType = () => {
   return (
     <div>
       <div className="blog-container py-8">
           <div>
-            <h2 className="normal-text font-semibold text-3xl mb-8">
-              Sobre mí
-            </h2>
+            <AnimatedSubTitle text='Sobre mí' />
             <p className="normal-text">
               🧑🏻‍💻 Soy una persona de{" "}
               <span className="featured-tag">22 años</span> y vivo en

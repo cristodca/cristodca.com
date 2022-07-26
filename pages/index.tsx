@@ -4,6 +4,8 @@ import Image from 'next/image'
 import AboutMe from '../components/AboutMe'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import PortfolioPreview from '../components/PortfolioPreview'
+import RecentPostsBlog from '../components/RecentPostsBlog'
 
 const Home: NextPage = () => {
   return (
@@ -59,6 +61,8 @@ const Home: NextPage = () => {
       </div>
 
       <AboutMe />
+      <PortfolioPreview />
+      {/* <RecentPostsBlog /> */}
 
       <Footer />
     </div>
