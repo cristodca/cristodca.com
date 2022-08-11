@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer components {
+  .code-block {
+    @apply p-4 mb-8 rounded border border-l-4 border-dark text-light dark:border-light dark:text-dark;
+  }
+
   .main-container {
     @apply container mx-auto px-4 md:px-8 py-16;
   }
@@ -13,17 +17,23 @@
   }
 
   .normal-text {
-    @apply text-base text-dark mb-4 md:text-lg lg:text-xl dark:text-light;
+    @apply text-base text-dark font-light break-all mb-4 md:text-lg lg:text-xl dark:text-light;
+  }
+  .title {
+    @apply normal-text font-bold text-5xl mb-8 mt-12;
   }
   .subtitle {
-    @apply normal-text font-semibold text-3xl mb-8;
+    @apply normal-text font-semibold text-3xl mb-8 mt-12;
   }
   .featured-tag {
     @apply bg-primary text-light font-bold rounded px-2 dark:bg-secondary dark:text-dark;
   }
+  .featured-title {
+    @apply inline-block bg-dark text-secondary dark:bg-secondary dark:text-dark p-2 rounded;
+  }
 
   .btn-link {
-    @apply inline-block text-dark no-underline
+    @apply inline-block text-dark no-underline;
   }
 }
 
@@ -33,6 +43,23 @@ body {
   margin: 0;
   font-family: 'Courier Prime', monospace, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.code-block {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.code-block {
+  border: 1px solid theme('colors.dark');
+  color: theme('colors.dark');
+  border-width: 1px 1px 1px 8px;
+}
+.dark .code-block {
+  border: 1px solid theme('colors.light');
+  color: theme('colors.light');
+  border-width: 1px 1px 1px 8px;
 }
 
 a {

@@ -6,10 +6,10 @@ type TitleContent = {
   className?: string,
 }
 
-const AnimatedSubTitle: FunctionComponent<TitleContent> = ({ text, className }) => {
+const AnimatedTitle: FunctionComponent<TitleContent> = ({ text, className }) => {
   return (
     <motion.h2 
-      className={`subtitle featured-title ${className}`}
+      className={`title featured-title ${className}`}
       initial={{ opacity: 0, x: -200 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
@@ -20,4 +20,4 @@ const AnimatedSubTitle: FunctionComponent<TitleContent> = ({ text, className }) 
   )
 }
 
-export default AnimatedSubTitle
+export default AnimatedTitle
