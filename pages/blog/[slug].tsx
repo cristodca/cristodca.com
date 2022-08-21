@@ -1,8 +1,8 @@
-import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import AnimatedTitle from "../../components/AnimatedTitle";
 import Layout from "../../components/Layout";
+import SEO from "../../components/SEO";
 import { getAllPostsWithSlug, getPostDataBySlug } from "./../../lib/graphcms";
 
 export async function getStaticPaths() {
@@ -27,50 +27,12 @@ export async function getStaticProps({ params }: any) {
 const Slug = ({ post }: any) => {
   return (
     <>
-      <Head>
-        {post?.title && (
-          <>
-            <title>{post?.title} - cristodca.com</title>
-            <meta
-              property="og:title"
-              content={`${post?.title} - cristodca.com`}
-            />
-            <meta
-              property="twitter:title"
-              content={`${post?.title} - cristodca.com`}
-            />
-          </>
-        )}
-        {post?.description && (
-          <>
-            <meta name="description" content={post?.description} />
-            <meta property="og:description" content={post?.description} />
-            <meta property="twitter:description" content={post?.description} />
-          </>
-        )}
-
-        {/* Og Metatags */}
-        <meta property="og:site" content="website" />
-        <meta
-          property="og:url"
-          content={`https://www.cristodca.com/blog/${post?.slug}`}
+        <SEO 
+          title={post?.title}
+          description={post?.description}
+          url={`https://www.cristodca.com/blog/${post?.slug}`}
+          keywords={post?.keywords}
         />
-        <meta
-          property="og:image"
-          content="https://www.cristodca.com/banner.png"
-        />
-
-        {/* Twitter Metatags */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="og:url"
-          content={`https://www.cristodca.com/blog/${post?.slug}`}
-        />
-        <meta
-          property="twitter:image"
-          content="https://www.cristodca.com/banner.png"
-        />
-      </Head>
 
       <div className="bg-light dark:bg-dark">
         <Layout>

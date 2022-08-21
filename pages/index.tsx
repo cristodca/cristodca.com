@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import AboutMe from "../components/AboutMe";
 import RecentPostsBlog from "../components/RecentPostsBlog";
 
 import { GraphQLClient, gql } from "graphql-request";
 import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 
 const graphcms = new GraphQLClient(
   "https://api-us-west-2.hygraph.com/v2/cl5t3r73o1y6b01ukchus83jv/master"
@@ -39,11 +39,12 @@ export async function getStaticProps() {
 const Home: NextPage = ({ blogs }: any) => {
   return (
     <div className="bg-light dark:bg-dark">
-      <Head>
-        <title>Cristopher D. Chavez | cristodca.com</title>
-        <meta name="description" content="Soy Desarrollador Web Fullstack con más de 5 años de experiencia en la programación. Vivo en Guadalajara y puedo hablar en inglés o español." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SEO 
+        title='Cristopher D. Chavez'
+        description='Soy Desarrollador Web Fullstack con más de 5 años de experiencia en la programación. Vivo en Guadalajara y puedo hablar en inglés o español'
+        url='https://www.cristodca.com/'
+        keywords='programador web, guadalajara, freelance, fullstack, landing page'
+      />
 
       <Layout>
         <div className="main-container py-8 min-h-screen md:flex md:flex-col md:justify-center">
