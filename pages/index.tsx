@@ -6,6 +6,7 @@ import RecentPostsBlog from "../components/RecentPostsBlog";
 import { GraphQLClient, gql } from "graphql-request";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
+import PortfolioPreview from "../components/PortfolioPreview";
 
 const graphcms = new GraphQLClient(
   "https://api-us-west-2.hygraph.com/v2/cl5t3r73o1y6b01ukchus83jv/master"
@@ -39,28 +40,25 @@ export async function getStaticProps() {
 const Home: NextPage = ({ blogs }: any) => {
   return (
     <div className="bg-light dark:bg-dark">
-      <SEO 
-        title='Cristopher D. Chavez'
-        description='Soy Desarrollador Web Fullstack con más de 5 años de experiencia en la programación. Vivo en Guadalajara y puedo hablar en inglés o español'
-        url='https://www.cristodca.com/'
-        keywords='programador web, guadalajara, freelance, fullstack, landing page'
+      <SEO
+        title="Cristopher D. Chavez"
+        description="Soy Desarrollador Web Fullstack con más de 5 años de experiencia en la programación. Vivo en Guadalajara y puedo hablar en inglés o español"
+        url="https://www.cristodca.com/"
+        keywords="programador web, guadalajara, freelance, fullstack, landing page"
       />
 
       <Layout>
         <div className="main-container py-8 min-h-screen md:flex md:flex-col md:justify-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
-            <div className="flex flex-col justify-center items-start">
-              <h1 className="mb-4">
+            <div className="flex flex-col justify-center items-center lg:items-start">
+              <h1 className="mb-4 text-center lg:text-start">
                 <span className="hyper-title text-dark bg-secondary px-3 py-2 text-5xl sm:text-6xl md:text-6xl box-decoration-clone leading-normal sm:leading-tight md:leading-tight font-bold">
-                  Cristopher D.
-                  <br className="block md:hidden" />
-                  Chavez
+                  Cristopher D. Chavez
                 </span>
               </h1>
-              <h2>
-                <span className="text-secondary bg-dark p-3 inline-block text-4xl sm:text-5xl md:text-6xl box-decoration-clone leading-none font-medium">
-                  Frontend <br className="block md:hidden" />
-                  Developer
+              <h2 className="text-center lg:text-start">
+                <span className="text-secondary bg-dark p-3 inline-block text-3xl sm:text-4xl md:text-5xl box-decoration-clone leading-none font-medium">
+                  Frontend Developer
                 </span>
               </h2>
             </div>
@@ -86,6 +84,9 @@ const Home: NextPage = ({ blogs }: any) => {
         </div>
 
         <AboutMe />
+
+        <PortfolioPreview />
+
         <RecentPostsBlog blogs={blogs} showMorePosts />
       </Layout>
     </div>
