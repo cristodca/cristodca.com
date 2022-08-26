@@ -17,7 +17,10 @@
   }
 
   .normal-text {
-    @apply text-base text-dark font-light break-all mb-4 md:text-lg lg:text-xl dark:text-light;
+    @apply text-base text-dark font-light mb-4 md:text-lg lg:text-xl dark:text-light font-light;
+  }
+  .normal-text strong {
+    @apply font-bold;
   }
   .title {
     @apply normal-text font-bold text-5xl mb-8 mt-12;
@@ -72,7 +75,9 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Abril Fatface';
+  /* font-family: 'Abril Fatface'; */
+  /* font-family: 'Bebas Neue'; */
+  font-family: 'Montserrat';
 }
 .hyper-title {
   font-family: 'Bebas Neue', sans-serif;

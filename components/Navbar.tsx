@@ -1,4 +1,5 @@
 import { NextComponentType } from "next";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { checkDarkMode, toggleDarkMode } from "../helpers/darkMode";
 import IconGithub from "./icons/Github";
@@ -17,9 +18,11 @@ const Navbar: NextComponentType = () => {
       <div className="main-container border-b border-b-dark py-4 dark:border-b-light">
         <div className="w-full flex justify-between items-center">
           <div className="flex items-center gap-4">
-            <span className="hidden md:block">
-              @cristodca
-            </span>
+            <Link href="/">
+              <a className="hidden md:block">
+                cristodca.com
+              </a>
+            </Link>
             <a
               href="https://mx.linkedin.com/in/cristodca"
               target="_blank"
