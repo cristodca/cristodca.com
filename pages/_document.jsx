@@ -1,9 +1,5 @@
 import { Html, Main } from "next/document";
-<<<<<<< HEAD
 import Head from "next/document";
-=======
-import Head from "next/head";
->>>>>>> 8f209ca82c221905bfc7e6cf694df3475cd20c78
 import Script from "next/script";
 import React from "react";
 
