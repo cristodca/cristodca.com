@@ -8,7 +8,7 @@ const Footer: NextComponentType = () => {
   }) 
 
   return (
-    <footer className='py-4'>
+    <footer className='py-4 bg-light dark:bg-dark'>
       <div className="flex justify-center text-dark dark:text-light">
         Hecho con ♥️ por @cristodca
       </div>

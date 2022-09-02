@@ -11,7 +11,7 @@ const PortfolioPreview: NextComponentType = () => {
       slug: '/portafolio/contalink',
       title: 'Contalink',
       description: 'Contalink es una empresa que ayuda a lxs contadorxs a hacer sus tareas de una manera más sencilla y eficaz, gestionando la contaduría de más de 25,000 empresas.',
-      imageUrl: 'https://source.unsplash.com/random/1280x720?random=1',
+      imageUrl: '/img/portfolio/contalink-md.png',
       icons: {
         js: true,
         angular: true,
@@ -23,7 +23,7 @@ const PortfolioPreview: NextComponentType = () => {
       slug: '/portafolio/los-cabos-children',
       title: 'Los Cabos Children Foundation',
       description: 'LCCF es una empresa sin ánimo de lucro que reune donativos para ayudar a lxs niñxs de Baja California a mejorar su calidad de vida.',
-      imageUrl: 'https://source.unsplash.com/random/1280x720?random=2',
+      imageUrl: '/img/portfolio/lccf-md.png',
       icons: {
         js: true,
         react: true,
@@ -36,7 +36,7 @@ const PortfolioPreview: NextComponentType = () => {
       slug: '/portafolio/oleolab',
       title: 'Oleolab',
       description: 'Oleolab es una empresa productora y distribuidora de aceites naturales, líder en méxico con presencia en las cadenas más importantes del país.',
-      imageUrl: 'https://source.unsplash.com/random/1280x720?random=3',
+      imageUrl: '/img/portfolio/oleolab-md.png',
       icons: {
         js: true,
         react: true,
@@ -49,7 +49,7 @@ const PortfolioPreview: NextComponentType = () => {
       slug: '/portafolio/hasta-la-luna-studios',
       title: 'Hasta la Luna Studios',
       description: 'HLLS es una agencia de contenido audiovisual, con más de 2 años de experiencia en la producción de videoclips, spots publicitarios, contenido para redes sociales, etc.',
-      imageUrl: 'https://source.unsplash.com/random/1280x720?random=4',
+      imageUrl: '/img/portfolio/hlls-md.png',
       icons: {
         js: true,
         react: true,

@@ -15,9 +15,18 @@
   .blog-container {
     @apply max-w-3xl mx-auto px-4 md:px-8;
   }
+  .blog-container p {
+    @apply normal-text;
+  }
+  .blog-container strong {
+    @apply featured-tag font-bold;
+  }
+  .blog-container a {
+    @apply hover-link text-primary dark:text-secondary;
+  }
 
   .normal-text {
-    @apply text-base text-dark font-light mb-4 md:text-lg lg:text-xl dark:text-light font-light;
+    @apply text-base text-dark mb-4 md:text-lg lg:text-xl dark:text-light font-light;
   }
   .normal-text strong {
     @apply font-bold;
