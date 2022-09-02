@@ -6,7 +6,7 @@ import AnimatedSubTitle from "./AnimatedSubTitle";
 const AboutMe: NextComponentType = () => {
   return (
     <div>
-      <div className="blog-container py-8">
+      <div className="px-4 max-w-4xl mx-auto py-8">
           <div>
             <AnimatedSubTitle text='Sobre mí' />
             <p className="normal-text">

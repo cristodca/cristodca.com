@@ -19,10 +19,19 @@
     @apply normal-text;
   }
   .blog-container strong {
-    @apply featured-tag font-bold;
+    @apply font-bold text-primary dark:text-secondary;
+  }
+  .featured-tag strong {
+    @apply text-secondary dark:text-primary;
   }
   .blog-container a {
     @apply hover-link text-primary dark:text-secondary;
+  }
+  .blog-container h2 {
+    @apply title text-primary dark:text-secondary;
+  }
+  .blog-container h3 {
+    @apply subtitle text-primary dark:text-secondary;
   }
 
   .normal-text {

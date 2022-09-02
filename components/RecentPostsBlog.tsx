@@ -16,7 +16,7 @@ const RecentPostsBlog: FunctionComponent<RecentBlogs> = ({ blogs, showMorePosts 
         {blogs &&
           blogs.map((post: any) => (
             <a href={`/blog/${post?.slug}`} key={post?.id}>
-              <div className="group rounded-2xl border overflow-hidden p-4 border-dark transition-all duration-300 dark:border-light hover:-translate-x-2 hover:-translate-y-2 hover:border-b-8 hover:border-r-8 hover:border-primary dark:hover:border-secondary">
+              <div className="group h-full flex flex-col justify-between rounded-2xl border overflow-hidden p-4 border-dark transition-all duration-300 dark:border-light hover:-translate-x-2 hover:-translate-y-2 hover:border-b-8 hover:border-r-8 hover:border-primary dark:hover:border-secondary">
                 <p className="normal-text text-2xl text-primary font-bold line-clamp-2 dark:text-secondary">
                   {post?.title}
                 </p>

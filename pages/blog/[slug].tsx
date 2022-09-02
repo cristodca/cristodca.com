@@ -52,7 +52,7 @@ const Slug = ({ post }: any) => {
             />
           </div>
 
-          <div className="blog-container">
+          <div className="blog-container pt-16 pb-8">
             <div
               dangerouslySetInnerHTML={{ __html: post?.content?.html }}
             ></div>

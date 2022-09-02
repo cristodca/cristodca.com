@@ -63,7 +63,7 @@ const PortfolioPreview: NextComponentType = () => {
     <div className="main-container">
       <AnimatedSubTitle text='Portafolio' />
 
-      <div className="grid grid-cols-1 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {projects && projects.map(project => (
           <PortfolioCard 
             key={project.id}
