@@ -27,6 +27,7 @@ const Navbar: NextComponentType = () => {
               href="https://mx.linkedin.com/in/cristodca"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="linkedin"
               className="fill-dark inline-block hover:fill-primary dark:fill-light dark:hover:fill-secondary"
             >
               <IconLinkedin />
@@ -35,6 +36,7 @@ const Navbar: NextComponentType = () => {
               href="https://github.com/cristodca"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="github"
               className="fill-dark inline-block hover:fill-primary dark:fill-light dark:hover:fill-secondary"
             >
               <IconGithub />
@@ -43,6 +45,7 @@ const Navbar: NextComponentType = () => {
               href="https://twitter.com/cristodca"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="twitter"
               className="fill-dark inline-block hover:fill-primary dark:fill-light dark:hover:fill-secondary"
             >
               <IconTwitter />
